@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 4</small>
+			Persuasive or Deceptive Visualization?
+		</h1>
+
+		<p>
+			<strong>Yu He</strong> — <em>yh527@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<h2>Proposition: Civilian complaints against NYPD officers have increased over time, indicating growing concerns
+			about police misconduct.</h2>
+
+		<section>
+			<h3>FOR the Proposition</h3>
+
+			<figure>
+				<img src="up.png" alt="Line chart showing an increase in complaints over time"
+					style="width: 80%; height: auto;">
+				<figcaption>
+					The number of civilian complaints against NYPD officers has increased significantly over time, with notable
+					spikes during key social justice events marked out for better understanding of the trends.
+					I also intentionally applied a 6-month rolling average, which highlights a clear upward trend, reinforcing the
+					argument that concerns about police misconduct have grown.
+				</figcaption>
+			</figure>
+
+			<p><strong>Design Decisions and Rationale:</strong></p>
+
+			<ul>
+				<li>
+					<strong>Rolling average to smooth fluctuations (Earnest, Score: 1)</strong>
+					- A 6-month rolling average was applied to remove short-term noise and highlight the long-term trend.
+					- The raw monthly data fluctuates due to seasonality, so the upward trend becomes more straightforward after
+					this transformation.
+				</li>
+				<li>
+					<strong>Exclusion of 2019 data to maintain a consistent trend (Deceptive, Score: -1.5)</strong>
+					- 2019 data was excluded because complaints dropped sharply that year, which could weaken the argument that
+					complaints have been steadily rising.
+					- This omission subtly makes the increase appear more linear than it actually is.
+				</li>
+				<li>
+					<strong>Color choice to evoke urgency (Deceptive, Score: -1)</strong>
+					- The red (lightcoral) color signals urgency and concern. A more neutral color, like blue, would have made the
+					trend seem less alarming.
+				</li>
+				<li>
+					<strong>Annotations linking spikes to key events (Earnest, Score: 2)</strong>
+					- Major incidents like the Eric Garner case (2014) and the police reform protests (2016) were labeled to show
+					correlations with rising complaints.
+				</li>
+				<li>
+					<strong>Truncated Y-axis for a steeper visual impact (Deceptive, Score: -1.5)</strong>
+					- The Y-axis was subtly adjusted so even small increases appear more dramatic. This helps emphasize the
+					perception of rapid growth.
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>AGAINST the Proposition</h3>
+
+			<figure>
+				<img src="down.png" alt="Line chart showing complaints per officer over time" style="width: 80%; height: auto;">
+				<figcaption>
+					When adjusting for the number of officers, the rate of civilian complaints per officer does not show a
+					dramatic increase.
+					The introduction of online complaint submissions in the early 2010s may have increased accessibility rather
+					than reflecting
+					a true rise in police misconduct. A 6-month rolling average was applied to smooth fluctuations, and the
+					broader trend
+					remains relatively stable.
+				</figcaption>
+			</figure>
+
+			<p><strong>Design Decisions and Rationale:</strong></p>
+
+			<ul>
+				<li>
+					<strong>Normalization by officers instead of raw counts (Earnest, Score: 1)</strong>
+					- Instead of plotting total complaints, I divided by the number of active NYPD officers, making it a more
+					meaningful measure.
+					- This avoids misleading interpretations where a larger police force could naturally result in more complaints
+					without an increase in misconduct.
+					- To more fairly evaluate the number of complaints received, we definitely need to take into account how large
+					is the NYPD department over the years.
+				</li>
+				<li>
+					<strong>Including 2019 data to maintain neutrality (Earnest, Score: 2)</strong>
+					- Unlike the "FOR" visualization, this one includes 2019 data, which saw a sharp drop.
+					- This choice helps avoid selectively removing data that would otherwise suggest a decline.
+				</li>
+				<li>
+					<strong>Blue color choice to neutralize urgency (Earnest, Score: 0.5)</strong>
+					- Unlike the red in the "FOR" chart, I used blue to provide a calmer, more neutral perception of the data.
+					- This prevents the immediate emotional reaction that a red trend line could evoke.
+				</li>
+				<li>
+					<strong>Short-term 6-month rolling average to maintain visibility (Neutral, Score: 0)</strong>
+					- Instead of a long-term rolling average, I kept it short to preserve visible fluctuations while still
+					smoothing minor spikes.
+					- This allows the audience to see that complaints per officer fluctuate rather than steadily increasing.
+				</li>
+				<li>
+					<strong>Eliminating data before online complaints were available (Deceptive, Score: -2)</strong>
+					- The visualization excludes complaints from before online reporting became widespread, subtly suggesting that
+					trends before this point are irrelevant.
+					- While online accessibility likely played some role in increasing complaint volume, excluding earlier data
+					exaggerates its effect by making it seem like the surge was purely due to reporting changes.
+					- Keeping this data would show that complaints per officer had fluctuations long before online reporting,
+					making the overall trend appear more gradual.
+					- This is actually the main reason this chart looks dramatically different from the FOR chart.
+				</li>
+				<li>
+					<strong>Expanding the Y-axis range to minimize perceived increases (Deceptive, Score: -1)</strong>
+					- Unlike the "FOR" graph, I did not truncate the Y-axis. Expanding it flattens the curve and makes the trend
+					appear more stable.
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Reflection</h2>
+
+			<p>
+				This exercise has been an insightful experience in exploring the balance between ethical visualization and
+				persuasive storytelling.
+				By working on both sides of the argument, I gained a deeper understanding of how subtle choices—like axis
+				scaling, color selection,
+				and data filtering—can significantly influence the viewer's perception.
+			</p>
+
+			<p>
+				One of the biggest takeaways was realizing that data transformations, while often applied to enhance
+				readability, can also be used
+				to reinforce a narrative. For example, applying a rolling average in the "FOR" visualization helped emphasize an
+				upward trend, while
+				in the "AGAINST" visualization, normalizing by the number of officers helped maintain a more stable perspective.
+				Both are technically
+				valid transformations, but they serve very different persuasive functions.
+			</p>
+
+			<p>
+				Ethical analysis in visualization is nuanced, as even earnest design choices can have persuasive elements. While
+				outright deception
+				(such as misrepresenting data) is clearly unethical, techniques like selecting specific time periods, choosing
+				impactful colors,
+				or framing Y-axis scales exist in a gray area. The key ethical boundary should be ensuring that the data remains
+				interpretable and
+				that viewers have enough context to critically assess the claims being made. This project reinforced the
+				importance of transparency
+				and awareness in visual storytelling.
+			</p>
+		</section>
+	</main>
+
+</body>
+
+</html>
